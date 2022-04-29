@@ -234,6 +234,16 @@ h1 {
   padding: 35px 0px 0px 35px;
 }
 
+#medium-anchor {
+  text-decoration: none;
+  color: #b114ff;
+  transition: 0.3s;
+}
+
+#medium-anchor:hover {
+  color: #7300ad;
+}
+
 #about-blurb {
   text-align: justify;
 }
