@@ -1,7 +1,6 @@
-/* 768 for sidebar menu. Use JS. Hamburger and X menu dropdown 
-1. 
-
-*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
