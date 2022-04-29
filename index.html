@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/00b9ece392.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Open+Sans:wght@400;500;700&family=Outfit:wght@700&family=Readex+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img class="nav_profile" src="Profile_pic.jpg" alt="profile_pic" />
+      <h4>Kurt Donaldson</h4>
+      <ul>
+        <li>
+          <a href="#home-page"><span>Home</span></a>
+        </li>
+        <li>
+          <a href="#about-me"><span>About</span></a>
+        </li>
+
+        <li>
+          <a href="#portfolio"><span>Portfolio</span></a>
+        </li>
+        <li>
+          <a href="#contact"><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main">
+      <div id="menu">
+        <button id="menu-button">Menu</button>
+      </div>
+
+      <div id="slide-menu">
+        <ul id="slide-ul">
+          <a href="#home-page"><li>Home</li></a>
+          <a href="#about-me"><li>About</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#portfolio"><li>Portfolio</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+      </div>
+
+      <div class="buttons">
+        <a href="#"><button id="resume-button">Resume</button></a>
+        <a href="#portfolio"><button id="work-button">My Work</button></a>
+      </div>
+      <div id="home-page">
+        <div id="home-page-text">
+          <h1>Kurt Donaldson</h1>
+          <h3 class="subtitle">Software Developer</h3>
+        </div>
+      </div>
+      <div id="about">
+        <div id="about-me">
+          <h2>About me</h2>
+          <h4>I'm Kurt Donaldson, a Software Developer</h4>
+          <p id="about-blurb">
+            I am a self-taught software developer based in Auckland, New
+            Zealand. I am currently transitioning careers from physiotherapist
+            to software developer. I have also had seven years experience as an
+            aircraft maintenance engineer. I have been learning web development
+            through several resources, including Udemy, Freecodecamp, Codecademy
+            and MDN. My interests include hiking, golf and diving. I have recently 
+            started blogging about my self-taught journey through Medium. 
+          </p>
+          <address>
+            <div>
+              <div id="contact-name" class="contact-info">
+                <span class="contact-heading">Name:</span> Kurt Donaldson
+              </div>
+              <div id="contact-email" class="contact-info">
+                <span class="contact-heading">Email:</span>
+                kurt.donaldson.nz@gmail.com
+              </div>
+            </div>
+            <div>
+              <div id="contact-number" class="contact-info">
+                <span class="contact-heading">Number:</span> 0223921209
+              </div>
+              <div id="contact-from" class="contact-info">
+                <span class="contact-heading">From:</span> Auckland, New Zealand
+              </div>
+            </div>
+          </address>
+        </div>
+        <div id="skills">
+          <div id="skills-border">
+            <h2 id="skills-heading">Skills</h2>
+            <div class="ul">
+              <ul>
+                <li>
+                  <h4>HTML</h4>
+                </li>
+                <li>
+                  <h4>Javascript</h4>
+                </li>
+                <li>
+                  <h4>Express</h4>
+                </li>
+                <li>
+                  <h4>Git and Github</h4>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <h4>CSS</h4>
+                </li>
+                <li>
+                  <h4>Node JS</h4>
+                </li>
+                <li>
+                  <h4>MongoDB</h4>
+                </li>
+                <li>
+                  <h4>REST API</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio">
+        <h2>Portfolio</h2>
+        <h4>My projects</h4>
+        <div id="projects">
+          <div id="project1">Project 1</div>
+          <div id="project2">Project 2</div>
+          <div id="project3">Project 3</div>
+        </div>
+      </div>
+      <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-details">
+          <form action="">
+            <input type="text" id="name" name="name" placeholder="Name" />
+            <input type="email" id="email" name="email" placeholder="Email" />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
+            <input
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Message"
+            />
+            <input type="submit" value="Contact me" id="contact-me" />
+          </form>
+        </div>
+      </div>
+      <div id="links">
+        <a
+          href="https://nz.linkedin.com/in/kurt-donaldson-354802b0"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/DONNY345/DONNY345" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:kurt.donaldson.nz@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="tel:+64223921209"><i class="fa-solid fa-mobile-screen"></i></a>
+        <a href="https://medium.com/@kurt.donaldson.nz/self-taught-software-developer-progress-f9d3ef137ef4" target="_blank"
+          ><i class="fa-brands fa-medium"></i></a>
+      </div>
+    </main>
+
+    <script src="apps.js"></script>
+  </body>
+</html>
