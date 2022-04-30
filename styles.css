@@ -225,6 +225,7 @@ h1 {
   }
   #about-me {
     margin: 0 auto;
+    padding: 35px 0px 0px 0px;
   }
 }
 
@@ -281,6 +282,7 @@ address {
 @media screen and (max-width: 1070px) {
   #skills {
     margin: 0 auto;
+    font-size: 20px;
   }
 }
 
