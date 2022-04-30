@@ -231,6 +231,7 @@ h1 {
 #about-me {
   width: 65%;
   padding: 35px 0px 0px 35px;
+  font-size: 20px;
 }
 
 #medium-anchor {
@@ -274,6 +275,7 @@ address {
 #skills {
   width: 35%;
   padding: 35px 50px 50px 50px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 1070px) {
