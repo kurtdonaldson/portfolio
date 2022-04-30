@@ -299,14 +299,6 @@ address {
   margin-left: 45px;
 }
 
-@media screen and (max-width: 1070px) {
-  #skills-heading {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 0;
-  }
-}
-
 h2 {
   font-size: 50px;
 }
@@ -473,17 +465,22 @@ form {
   font-size: 45px;
 }
 
+@media screen and (max-width: 1070px) {
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 50px;
   }
   h2 {
     font-size: 35px;
-    text-align: center;
   }
-  h3 {
-    text-align: center;
-  }
+
   .subtitle {
     font-size: 35px;
   }
