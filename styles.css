@@ -337,6 +337,14 @@ address {
   }
 }
 
+.icons h2{
+  font-size: 15px;
+  position: absolute;
+  background-color: #c8c8c8;
+  padding: 2px;
+  visibility: hidden;
+}
+
 h2 {
   font-size: 50px;
 }
