@@ -432,6 +432,39 @@ ul {
   font-size: 20px;
 }
 
+@media screen and (max-width: 550px) {
+  #project2,
+  #project1 {
+    width: 300px;
+  }
+
+  #bodyfat-app,
+  #golf-weather-app {
+    height: 180px;
+    margin-top: -15px;
+  }
+
+  #bodyfat-image,
+  #golf-image {
+    background-size: 300px 165px;
+    width: 300px;
+    height: 165px;
+  }
+
+  .project-heading {
+    padding-top: 10px;
+  }
+
+  #portfolio {
+    height: 800px;
+    margin-right: 25px;
+  }
+
+  #projects {
+    height: 600px;
+  }
+}
+
 #contact-details {
   text-align: center;
 }
@@ -572,7 +605,7 @@ form {
   }
   #about-me {
     width: 65%;
-    padding: 35px 0px 0px 35px;
+    padding: 35px 0px 0px 0px;
     font-size: 15px;
   }
 }
