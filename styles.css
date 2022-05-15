@@ -337,14 +337,6 @@ address {
   }
 }
 
-.icons h2{
-  font-size: 15px;
-  position: absolute;
-  background-color: #c8c8c8;
-  padding: 2px;
-  visibility: hidden;
-}
-
 h2 {
   font-size: 50px;
 }
@@ -378,24 +370,66 @@ ul {
 }
 
 #project1 {
-  background-color: rgb(180, 180, 180);
-  width: 200px;
-  height: 300px;
+  background-color: rgb(82, 141, 252);
+  width: 500px;
+
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#golf-weather-app {
+  height: 300px;
+}
+
+#golf-image {
+  background: url("/images/golf-weather\ screenshot.png") no-repeat;
+  background-size: 500px 225px;
+  width: 500px;
+  height: 225px;
+  object-fit: cover;
+  overflow: hidden;
+  background-blend-mode: soft-light;
+  transition: 0.3s;
+}
+
+#golf-image:hover {
+  background-color: rgba(50, 70, 80, 0.7);
 }
 
 #project2 {
-  background-color: rgb(141, 141, 141);
-  width: 200px;
-  height: 300px;
+  background-color: rgb(82, 141, 252);
+  width: 500px;
+
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-#project3 {
-  background-color: rgb(109, 109, 109);
-  width: 200px;
+#bodyfat-app {
   height: 300px;
-  margin: 10px;
+}
+
+#bodyfat-image {
+  background: url("/images/bodyfat-calculator\ screenshot.png") no-repeat;
+  background-size: 500px 225px;
+  width: 500px;
+  height: 225px;
+  object-fit: cover;
+  overflow: hidden;
+  background-blend-mode: soft-light;
+  transition: 0.3s;
+}
+
+#bodyfat-image:hover {
+  background-color: rgba(50, 70, 80, 0.7);
+}
+
+.project-heading {
+  color: antiquewhite;
+  font-size: 20px;
 }
 
 #contact-details {
