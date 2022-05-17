@@ -356,7 +356,7 @@ ul {
 #projects {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+
   height: auto;
   background-color: white;
   text-align: center;
@@ -369,14 +369,25 @@ ul {
   padding: 50px 50px 150px 50px;
 }
 
-#project1 {
-  background-color: rgb(82, 141, 252);
-  width: 500px;
-
-  margin: 10px;
+#project1,
+#project2 {
+  width: 1000px;
+  height: 335px;
+  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  /* flex-wrap: wrap; */
+
+  align-items: flex-start;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+#project1_blurb,
+#project2_blurb {
+  height: 335px;
+  max-width: 350px;
+  text-align: justify;
 }
 
 #golf-weather-app {
@@ -385,27 +396,18 @@ ul {
 
 #golf-image {
   background: url("/images/golf-weather\ screenshot.png") no-repeat;
-  background-size: 500px 225px;
-  width: 500px;
-  height: 225px;
+  background-size: 600px 280px;
+  width: 600px;
+  height: 280px;
   object-fit: cover;
   overflow: hidden;
   background-blend-mode: soft-light;
   transition: 0.3s;
+  padding-right: 50px;
 }
 
 #golf-image:hover {
   background-color: rgba(50, 70, 80, 0.7);
-}
-
-#project2 {
-  background-color: rgb(82, 141, 252);
-  width: 500px;
-
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 #bodyfat-app {
@@ -414,17 +416,24 @@ ul {
 
 #bodyfat-image {
   background: url("/images/bodyfat-calculator\ screenshot.png") no-repeat;
-  background-size: 500px 225px;
-  width: 500px;
-  height: 225px;
+  background-size: 600px 280px;
+  width: 600px;
+  height: 280px;
   object-fit: cover;
   overflow: hidden;
   background-blend-mode: soft-light;
   transition: 0.3s;
+  padding-right: 50px;
 }
 
 #bodyfat-image:hover {
   background-color: rgba(50, 70, 80, 0.7);
+}
+
+.project_blurbs {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 0;
 }
 
 .project-heading {
@@ -432,35 +441,71 @@ ul {
   font-size: 20px;
 }
 
-@media screen and (max-width: 550px) {
-  #project2,
+@media screen and (max-width: 1200px) {
   #project1 {
-    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    height: 510px;
+    align-items: center;
+    margin: 10px;
+  }
+  #project2 {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    height: 540px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding-top: 50px;
   }
 
-  #bodyfat-app,
-  #golf-weather-app {
-    height: 180px;
-    margin-top: -15px;
+  #project1_blurb,
+  #project2_blurb {
+    height: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+    min-width: 550px;
   }
+  .project_blurbs {
+    text-align: center;
+    font-size: 17px;
+  }
+  #golf-image,
+  #bodyfat-image {
+    padding: 0;
+  }
+}
 
+@media screen and (max-width: 650px) {
   #bodyfat-image,
   #golf-image {
-    background-size: 300px 165px;
-    width: 300px;
-    height: 165px;
+    background-size: 350px 170px;
+    width: 350px;
+    height: 170px;
+  }
+  #project1_blurb {
+    min-width: 350px;
   }
 
-  .project-heading {
-    padding-top: 10px;
+  #project2_blurb {
+    min-width: 350px;
+    height: 270px;
   }
 
-  #portfolio {
-    height: 800px;
+  #project1 {
+    justify-content: space-around;
+    height: 450px;
   }
 
-  #projects {
-    height: 600px;
+  #project2 {
+    justify-content: space-around;
+    height: 500px;
+    padding: 10px;
+  }
+
+  #golf-weather-app,
+  #bodyfat-app {
+    height: 200px;
   }
 }
 
