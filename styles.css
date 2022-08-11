@@ -452,10 +452,6 @@ ul {
   padding-right: 50px;
 }
 
-#golf-image:hover {
-  background-color: rgba(50, 70, 80, 0.7);
-}
-
 #bodyfat-app {
   height: 300px;
 }
@@ -472,10 +468,6 @@ ul {
   padding-right: 50px;
 }
 
-#bodyfat-image:hover {
-  background-color: rgba(50, 70, 80, 0.7);
-}
-
 .project_blurbs {
   font-size: 20px;
   text-align: left;
@@ -487,7 +479,23 @@ ul {
   font-size: 20px;
 }
 
+.projectBtns{
+  background-color: #0003b4cc;
+  color: #e7e7e7;
+  padding: 6px 12px;
+  margin-right: 20px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.projectBtns:hover{
+  background-color: #000261e8;
+}
+
 @media screen and (max-width: 1200px) {
+  .projectBtns{
+    margin: auto;
+  }
   #project1 {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -498,7 +506,7 @@ ul {
   #project2 {
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    height: 540px;
+    height: 593px;
     align-items: center;
     justify-content: space-between;
     margin: 10px;
@@ -509,7 +517,7 @@ ul {
   #project2_blurb {
     height: 150px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 55px;
     min-width: 550px;
   }
   .project_blurbs {
@@ -531,6 +539,7 @@ ul {
   }
   #project1_blurb {
     min-width: 350px;
+    margin-bottom: 90px;
   }
 
   #project2_blurb {
@@ -545,7 +554,7 @@ ul {
 
   #project2 {
     justify-content: space-around;
-    height: 500px;
+    height: 627px;
     padding: 10px;
   }
 
