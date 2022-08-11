@@ -468,6 +468,10 @@ ul {
   padding-right: 50px;
 }
 
+#golf-image, #bodyfat-image{
+  margin-top: 8px;
+}
+
 .project_blurbs {
   font-size: 20px;
   text-align: left;
