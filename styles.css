@@ -250,6 +250,49 @@ h1 {
   text-align: justify;
 }
 
+.icon-heading {
+  position: absolute;
+  background-color: #2600ff96;
+  color: antiquewhite;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  display: none;
+}
+
+.icons:hover > .icon-heading {
+  display: block;
+}
+
+#html-heading {
+  transform: translate(17px, -30px);
+}
+
+#css-heading {
+  transform: translate(27px, -30px);
+}
+
+#javascript-heading {
+  transform: translate(0px, -30px);
+}
+
+#node-heading {
+  transform: translate(15px, -30px);
+}
+
+#bootstrap-heading {
+  transform: translate(-5px, -30px);
+}
+#mongo-heading {
+  transform: translate(-5px, -30px);
+}
+#git-heading {
+  transform: translate(30px, -30px);
+}
+#github-heading {
+  transform: translate(12px, -30px);
+}
+
 address {
   display: flex;
   justify-content: space-between;
