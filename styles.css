@@ -519,7 +519,7 @@ ul {
   color: #f3f3f3;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1270px) {
   .projectBtns {
     margin: auto;
   }
