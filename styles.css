@@ -488,7 +488,7 @@ ul {
 
 #golf-image,
 #bodyfat-image,
-#web-scraper-image{
+#web-scraper-image {
   margin-top: 8px;
 }
 
@@ -538,11 +538,12 @@ ul {
     justify-content: space-between;
     margin: 10px;
     padding-top: 50px;
+    margin-bottom: 50px;
   }
   #project3 {
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    height: 593px;
+    height: 525px;
     align-items: center;
     justify-content: space-between;
     margin: 10px;
@@ -561,15 +562,19 @@ ul {
     font-size: 17px;
   }
   #golf-image,
-  #bodyfat-image,
-  #web-scraper-image {
+  #bodyfat-image {
     padding: 0;
+  }
+
+  #web-scraper-image {
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 650px) {
   #bodyfat-image,
-  #golf-image,#web-scraper-image  {
+  #golf-image,
+  #web-scraper-image {
     background-size: 350px 170px;
     width: 350px;
     height: 170px;
@@ -605,8 +610,13 @@ ul {
   }
 
   #golf-weather-app,
-  #bodyfat-app, #web-scraper-image {
+  #bodyfat-app,
+  #web-scraper-image {
     height: 200px;
+  }
+
+  #web-scraper-image {
+    padding: 0;
   }
 }
 
