@@ -414,7 +414,8 @@ ul {
 }
 
 #project1,
-#project2 {
+#project2,
+#project3 {
   width: 1000px;
   height: 335px;
   margin-bottom: 50px;
@@ -428,7 +429,8 @@ ul {
 }
 
 #project1_blurb,
-#project2_blurb {
+#project2_blurb,
+#project3_blurb {
   height: 335px;
   max-width: 350px;
   text-align: justify;
@@ -454,6 +456,10 @@ ul {
   height: 300px;
 }
 
+#web-scraper-app {
+  height: 300px;
+}
+
 #bodyfat-image {
   background: url("/images/bodyfat-calculator\ screenshot.png") no-repeat;
   background-size: 600px 280px;
@@ -466,8 +472,23 @@ ul {
   padding-right: 50px;
 }
 
+#web-scraper-image {
+  background: url("/images/webscraper-screenshot.png") no-repeat;
+  background-size: 600px 280px;
+  width: 550px;
+  height: 280px;
+  object-fit: cover;
+  overflow: hidden;
+  background-blend-mode: soft-light;
+  transition: 0.3s;
+  padding-right: 50px;
+  border: 0.5px solid rgba(126, 126, 126, 0.445);
+  margin-right: 50px;
+}
+
 #golf-image,
-#bodyfat-image {
+#bodyfat-image,
+#web-scraper-image{
   margin-top: 8px;
 }
 
@@ -518,9 +539,18 @@ ul {
     margin: 10px;
     padding-top: 50px;
   }
-
+  #project3 {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    height: 593px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding-top: 50px;
+  }
   #project1_blurb,
-  #project2_blurb {
+  #project2_blurb,
+  #project3_blurb {
     height: 150px;
     text-align: center;
     margin-bottom: 55px;
@@ -531,14 +561,15 @@ ul {
     font-size: 17px;
   }
   #golf-image,
-  #bodyfat-image {
+  #bodyfat-image,
+  #web-scraper-image {
     padding: 0;
   }
 }
 
 @media screen and (max-width: 650px) {
   #bodyfat-image,
-  #golf-image {
+  #golf-image,#web-scraper-image  {
     background-size: 350px 170px;
     width: 350px;
     height: 170px;
@@ -549,6 +580,10 @@ ul {
   }
 
   #project2_blurb {
+    min-width: 350px;
+    height: 270px;
+  }
+  #project3_blurb {
     min-width: 350px;
     height: 270px;
   }
@@ -563,9 +598,14 @@ ul {
     height: 627px;
     padding: 10px;
   }
+  #project3 {
+    justify-content: space-around;
+    height: 627px;
+    padding: 10px;
+  }
 
   #golf-weather-app,
-  #bodyfat-app {
+  #bodyfat-app, #web-scraper-image {
     height: 200px;
   }
 }
