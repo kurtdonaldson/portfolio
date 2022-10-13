@@ -391,7 +391,7 @@ ul {
 
 #project2 {
   width: 1200px;
-  height: 550px;
+  height: 430px;
   margin-bottom: 50px;
   display: flex;
   /* flex-wrap: wrap; */
@@ -415,13 +415,15 @@ ul {
 #golf-image {
   background: url("/images/golf-weather\ screenshot.png") no-repeat;
   background-size: 600px 280px;
-  width: 575px;
+  width: 600px;
   height: 280px;
   object-fit: cover;
   overflow: hidden;
   background-blend-mode: soft-light;
   transition: 0.3s;
   padding-right: 50px;
+  box-sizing: border-box;
+  margin-right: 20px;
 }
 
 #bodyfat-app {
@@ -435,27 +437,29 @@ ul {
 #bodyfat-image {
   background: url("/images/bodyfat-calculator\ screenshot.png") no-repeat;
   background-size: 600px 280px;
-  width: 575px;
+  width: 600px;
   height: 280px;
   object-fit: cover;
   overflow: hidden;
   background-blend-mode: soft-light;
   transition: 0.3s;
   padding-right: 50px;
+  box-sizing: border-box;
+  margin-right: 20px;
 }
 
 #web-scraper-image {
   background: url("/images/webscraper-screenshot.png") no-repeat;
   background-size: 600px 280px;
-  width: 575px;
+  width: 600px;
   height: 280px;
   object-fit: cover;
   overflow: hidden;
   background-blend-mode: soft-light;
   transition: 0.3s;
-  padding-right: 50px;
   border: 0.5px solid rgba(126, 126, 126, 0.445);
-  margin-right: 50px;
+  margin-right: 20px;
+  box-sizing: border-box;
 }
 
 #golf-image,
@@ -734,9 +738,10 @@ form {
   #bodyfat-image,
   #golf-image,
   #web-scraper-image {
-    background-size: 350px 170px;
-    width: 350px;
+    background-size: 300px;
+    width: 300px;
     height: 170px;
+    margin-right: 0;
   }
   #project1_blurb {
     width: 350px;
@@ -765,7 +770,7 @@ form {
   }
   #project3 {
     justify-content: space-around;
-    height: 580px;
+    height: 610px;
     padding: 10px;
   }
 
@@ -775,9 +780,9 @@ form {
     height: 200px;
   }
 
-  #web-scraper-image {
+  /* #web-scraper-image {
     padding: 0;
-  }
+  } */
 
   .project_blurbs > p{
     font-size: 13px;
@@ -820,15 +825,15 @@ form {
   }
   
   #project1_blurb {
-    width: 350px;
+    width: auto;
   }
 
   #project2_blurb {
-    width: 350px;
+    width: auto;
     height: 270px;
   }
   #project3_blurb {
-    width: 350px;
+    width: auto;
     height: 200px;
   }
 
