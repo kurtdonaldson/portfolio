@@ -661,8 +661,7 @@ form {
   }
   #skills-border {
     border-left: none;
-    border-top: 2px solid #c8c8c8;
-    border-bottom: 2px solid #c8c8c8;
+    /* border-top: 2px solid #c8c8c8; */
     padding-bottom: 100px;
     bottom: 0;
   }
