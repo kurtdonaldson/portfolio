@@ -261,7 +261,7 @@ h1 {
   transition: 0.6s;
 }
 
-.icons:hover > .icon-heading {
+/* .icons:hover > .icon-heading {
   opacity: 100%;
 }
 
@@ -292,7 +292,7 @@ h1 {
 }
 #github-heading {
   transform: translate(12px, -30px);
-}
+} */
 
 address {
   display: flex;
@@ -330,30 +330,84 @@ address {
 }
 
 #skills-heading {
-  margin-left: 45px;
+  margin-left: 70px;
 }
 
 .icon_container {
+  display: grid;
+  grid-template-areas: 
+  "html css js"
+  "react node bootstrap"
+  "sql mongo git";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px;
+  margin: 0 70px;
+}
+
+
+.icons > h3 {
+  font-size: 0.6em;
+  margin-bottom: 5px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0px 40px;
-  margin: 0 40px;
+  justify-content: center;
 }
 
-.icons {
-  padding: 10px;
+.icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1465px) {
-  .icon_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0px;
-    margin: 0px 25px;
-  }
+/* .icon-logos{
+  width: 100px;
+} */
+
+#icon-html{
+  grid-area: html;
+  /* background-color: #b114ff; */
+
 }
+
+#icon-css{
+  grid-area: css;
+  /* background-color: #04aa6d; */
+}
+
+#icon-js{
+  grid-area: js;
+  /* background-color: #aa0473; */
+}
+
+#icon-react{
+  grid-area: react;
+}
+
+#icon-node{
+  grid-area: node;
+}
+
+#icon-bootstrap{
+  grid-area: bootstrap;
+}
+
+#icon-sql{
+  grid-area: sql;
+}
+
+#icon-mongo{
+  grid-area: mongo;
+}
+
+#icon-git{
+  grid-area: git;
+}
+
+#icon-github{
+  grid-area: github;
+}
+
+
 
 @media screen and (max-width: 1150px) {
   #skills {
@@ -371,9 +425,6 @@ address {
     border-left: none;
     border-top: 2px solid #c8c8c8;
     bottom: 0;
-  }
-  .icons {
-    padding: 15px;
   }
   #about-me {
     width: 65%;
@@ -533,7 +584,7 @@ ul {
   #project2 {
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    height: 593px;
+    height: 618px;
     align-items: center;
     justify-content: space-between;
     margin: 10px;
@@ -543,7 +594,7 @@ ul {
   #project3 {
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    height: 525px;
+    height: 550px;
     align-items: center;
     justify-content: space-between;
     margin: 10px;
@@ -568,6 +619,10 @@ ul {
 
   #web-scraper-image {
     margin-right: 0;
+  }
+  .project_blurbs > p:nth-last-of-type(2){
+    text-align: justify;
+    font-size: 17px;
   }
 }
 
@@ -707,6 +762,7 @@ form {
   input[id="email"] {
     justify-self: center;
   }
+
 }
 
 #links {
@@ -762,5 +818,29 @@ form {
     width: 65%;
     padding: 35px 0px 0px 0px;
     font-size: 15px;
+  }
+  
+  #project1_blurb {
+    min-width: 200px;
+    margin-bottom: 90px;
+  }
+
+  #project2_blurb {
+    min-width: 350px;
+    height: 270px;
+  }
+  #project3_blurb {
+    min-width: 350px;
+    height: 270px;
+  }
+
+  .icon_container {
+    gap: 0;
+    margin: 0;
+
+  }
+  .icons{
+    width: 20vw;
+    margin: auto;
   }
 }
