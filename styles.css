@@ -383,7 +383,21 @@ ul {
   padding: 0;
 }
 
+#project4{
+  width: 1200px;
+  height: 420px;
+  margin-bottom: 50px;
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  align-items: flex-start;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
 #project1_blurb,
+#project4_blurb,
 #project3_blurb {
   height: 335px;
   text-align: justify;
@@ -462,11 +476,28 @@ ul {
   box-sizing: border-box;
 }
 
+#blog-image {
+  background: url("/images/blog-screenshot.png") no-repeat;
+  background-size: 600px 280px;
+  width: 600px;
+  height: 280px;
+  object-fit: cover;
+  overflow: hidden;
+  background-blend-mode: soft-light;
+  transition: 0.3s;
+  padding-right: 50px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
 #golf-image,
+#blog-image,
 #bodyfat-image,
 #web-scraper-image {
   margin-top: 8px;
 }
+
+
 
 .project_blurbs {
   font-size: 20px;
@@ -618,9 +649,19 @@ form {
     margin: 10px;
     padding-top: 50px;
   }
+  #project4 {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    height: 586px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding-top: 50px;
+  }
   #project1_blurb,
   #project2_blurb,
-  #project3_blurb {
+  #project3_blurb,
+  #project4_blurb {
     height: 150px;
     text-align: center;
     margin-bottom: 55px;
@@ -729,13 +770,18 @@ form {
     display: block;
   }
 
-  #project1, #project2{
+  #project1, #project2, #project4{
     border-bottom: 2px solid #c8c8c8;
+  }
+
+  #project4{
+    padding-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 650px) {
   #bodyfat-image,
+  #blog-image,
   #golf-image,
   #web-scraper-image {
     background-size: 300px;
@@ -758,6 +804,12 @@ form {
     margin-bottom: 0px;
   }
 
+  #project4_blurb {
+    width: 320px;
+    height: 270px;
+    margin-bottom: 0px;
+  }
+
   #project1 {
     justify-content: space-around;
     height: 450px;
@@ -773,8 +825,14 @@ form {
     height: 610px;
     padding: 10px;
   }
+  #project4 {
+    justify-content: space-around;
+    height: 610px;
+    padding: 10px;
+  }
 
   #golf-weather-app,
+  #blog-app,
   #bodyfat-app,
   #web-scraper-image {
     height: 200px;
@@ -788,7 +846,7 @@ form {
     font-size: 13px;
   }
 
-  #project1-p, #project2-p, #project3-p{
+  #project1-p, #project2-p, #project3-p, #project4-p{
     font-size: 13px;
   }
 }
@@ -833,6 +891,10 @@ form {
     height: 270px;
   }
   #project3_blurb {
+    width: auto;
+    height: 200px;
+  }
+  #project4_blurb {
     width: auto;
     height: 200px;
   }
