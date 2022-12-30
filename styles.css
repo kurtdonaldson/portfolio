@@ -875,6 +875,14 @@ form {
     font-size: 15px;
   }
 
+  #project4 {
+    height: 555px;
+  }
+
+  #project3 {
+    height: 550px;
+  }
+
   #project1_blurb {
     width: auto;
   }
