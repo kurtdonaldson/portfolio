@@ -157,8 +157,6 @@ body {
   color: #111;
 }
 
-
-
 #home-page {
   background-image: linear-gradient(
       to bottom,
@@ -265,16 +263,15 @@ address {
 
 .icon_container {
   display: grid;
-  grid-template-areas: 
-  "html css js"
-  "react node bootstrap"
-  "sql mongo git";
+  grid-template-areas:
+    "html css js"
+    "react node bootstrap"
+    "sql mongo git";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 40px;
   margin: 0 70px;
 }
-
 
 .icons > h3 {
   font-size: 0.6em;
@@ -283,7 +280,7 @@ address {
   justify-content: center;
 }
 
-.icons{
+.icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -293,47 +290,46 @@ address {
   width: 100px;
 } */
 
-#icon-html{
+#icon-html {
   grid-area: html;
   /* background-color: #b114ff; */
-
 }
 
-#icon-css{
+#icon-css {
   grid-area: css;
   /* background-color: #04aa6d; */
 }
 
-#icon-js{
+#icon-js {
   grid-area: js;
   /* background-color: #aa0473; */
 }
 
-#icon-react{
+#icon-react {
   grid-area: react;
 }
 
-#icon-node{
+#icon-node {
   grid-area: node;
 }
 
-#icon-bootstrap{
+#icon-bootstrap {
   grid-area: bootstrap;
 }
 
-#icon-sql{
+#icon-sql {
   grid-area: sql;
 }
 
-#icon-mongo{
+#icon-mongo {
   grid-area: mongo;
 }
 
-#icon-git{
+#icon-git {
   grid-area: git;
 }
 
-#icon-github{
+#icon-github {
   grid-area: github;
 }
 
@@ -383,7 +379,7 @@ ul {
   padding: 0;
 }
 
-#project4{
+#project4 {
   width: 1200px;
   height: 420px;
   margin-bottom: 50px;
@@ -421,7 +417,6 @@ ul {
   text-align: justify;
 }
 
-
 #golf-weather-app {
   height: 300px;
 }
@@ -444,7 +439,7 @@ ul {
   height: 300px;
 }
 
-#web-scraper-app {
+#limitless-app {
   height: 300px;
 }
 
@@ -462,8 +457,8 @@ ul {
   margin-right: 20px;
 }
 
-#web-scraper-image {
-  background: url("/images/webscraper-screenshot.png") no-repeat;
+#limitless-image {
+  background: url("/images/limitlessScreenshot.png") no-repeat;
   background-size: 600px 280px;
   width: 600px;
   height: 280px;
@@ -471,7 +466,6 @@ ul {
   overflow: hidden;
   background-blend-mode: soft-light;
   transition: 0.3s;
-  border: 0.5px solid rgba(126, 126, 126, 0.445);
   margin-right: 20px;
   box-sizing: border-box;
 }
@@ -493,11 +487,9 @@ ul {
 #golf-image,
 #blog-image,
 #bodyfat-image,
-#web-scraper-image {
+#limitless-image {
   margin-top: 8px;
 }
-
-
 
 .project_blurbs {
   font-size: 20px;
@@ -596,8 +588,6 @@ form {
   grid-gap: 10px;
 }
 
-
-
 #links {
   height: auto;
   padding: 50px;
@@ -676,17 +666,16 @@ form {
     padding: 0;
   }
 
-  #web-scraper-image {
+  #limitless-image {
     margin-right: 0;
   }
-  .project_blurbs > p:nth-last-of-type(2){
+  .project_blurbs > p:nth-last-of-type(2) {
     text-align: justify;
     font-size: 17px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-
   h2,
   h3,
   h4 {
@@ -739,9 +728,7 @@ form {
   input[id="email"] {
     justify-self: center;
   }
-
 }
-
 
 @media screen and (max-width: 850px) {
   address {
@@ -770,11 +757,13 @@ form {
     display: block;
   }
 
-  #project1, #project2, #project4{
+  #project1,
+  #project2,
+  #project4 {
     border-bottom: 2px solid #c8c8c8;
   }
 
-  #project4{
+  #project4 {
     padding-bottom: 50px;
   }
 }
@@ -783,7 +772,7 @@ form {
   #bodyfat-image,
   #blog-image,
   #golf-image,
-  #web-scraper-image {
+  #limitless-image {
     background-size: 300px;
     width: 300px;
     height: 170px;
@@ -800,7 +789,7 @@ form {
   }
   #project3_blurb {
     width: 320px;
-    height: 270px;
+    height: 215px;
     margin-bottom: 0px;
   }
 
@@ -823,31 +812,34 @@ form {
   }
   #project3 {
     justify-content: space-around;
-    height: 610px;
+    height: 570px;
     padding: 10px;
   }
   #project4 {
     justify-content: space-around;
-    height: 540px;
+    height: 620px;
     padding: 10px;
   }
 
   #golf-weather-app,
   #blog-app,
   #bodyfat-app,
-  #web-scraper-image {
+  #limitless-image {
     height: 200px;
   }
 
-  /* #web-scraper-image {
+  /* #limitless-image {
     padding: 0;
   } */
 
-  .project_blurbs > p{
+  .project_blurbs > p {
     font-size: 13px;
   }
 
-  #project1-p, #project2-p, #project3-p, #project4-p{
+  #project1-p,
+  #project2-p,
+  #project3-p,
+  #project4-p {
     font-size: 13px;
   }
 }
@@ -873,7 +865,7 @@ form {
     width: auto;
   }
 
-  #skills-border{
+  #skills-border {
     padding-top: 100px;
   }
 
@@ -882,7 +874,7 @@ form {
     padding: 35px 0px 0px 0px;
     font-size: 15px;
   }
-  
+
   #project1_blurb {
     width: auto;
   }
@@ -903,9 +895,8 @@ form {
   .icon_container {
     gap: 0;
     margin: 0;
-
   }
-  .icons{
+  .icons {
     width: 20vw;
     margin: auto;
   }
